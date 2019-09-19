@@ -50,11 +50,12 @@ public class Shop {
         }
     }
 
-    public static void addProduct(Shop shop) {
+    public static void addProduct() {
         String title = JOptionPane.showInputDialog("Enter the title:");
         String id = JOptionPane.showInputDialog("Enter the id:");
         String type = JOptionPane.showInputDialog("Enter the type (M for movie/G for game):");
 
+        Product product = new Product();
         shop.productTitles.add(title);
         shop.productIds.add(id);
         shop.productTypes.add(type);
